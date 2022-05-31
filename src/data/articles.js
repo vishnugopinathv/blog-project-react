@@ -105,7 +105,7 @@ export const articleData=[
     },
     {
         "id": "14",
-        "title": "HomeHollywoodEverybody I Know Is A Newborn Care Specialist: New Dad Nick Jonas Jokes About Parenting Advice He Gets Everybody I Know Is A Newborn Care Specialist: New Dad Nick Jonas Jokes About Parenting Advice He Gets",
+        "title": "Everybody I Know Is A Newborn Care Specialist: New Dad Nick Jonas Jokes About Parenting Advice He Gets ",
         "Image": "https://c.ndtvimg.com/2022-05/4k1paoq_nick-jonas_625x300_19_May_22.jpg",
         "category": "Hollywood",
         "description": " Nick Jonas, who is now a dad, talked about his daughter Malti Marie Chopra Jonas during his recent appearance on The Tonight Show Starring Jimmy Fallon. When the show's host congratulated the singer-actor on becoming a dad, he said, 'Yeah, it's pretty wild. Our little girl's home. She's just amazing. What a gift.' He jokingly added, 'Turns out everybody I know is a newborn care specialist, all these PhDs I didn't know they had.' He also talked about a surprise he had in store for wife Priyanka Chopra. He said, 'It was her first one (Mother's Day), so did a little thing at the house. I got her a citrus tree that I'm going to plant this week.'",
