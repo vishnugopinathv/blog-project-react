@@ -17,7 +17,9 @@ const Detailedblog = () => {
             v.category===filteredBlog.category
         )
     })
-    const moreContent=[categoryFilter[parseInt(Math.random()*10)],categoryFilter[parseInt(Math.random()*10)],categoryFilter[parseInt(Math.random()*10)]]
+    const moreContent=categoryFilter.filter((v)=>{
+      return(v.id!==filteredBlog.id)  
+    })
     console.log(moreContent)
     useEffect(() => {
       window.scrollTo(0,0)
