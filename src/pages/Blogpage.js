@@ -4,16 +4,21 @@ import Blogitem from '../Components/Blogitem'
 const Blogpage = ({category}) => {
     const[data,setData]=useState([]);
     const{article}=useArticleContextConsumer();
+    const[topPosts,setTopPosts]=useState([]);
     useEffect(() => {
         const filtered=article.filter(v=>{
             return(
                v.category===category
             )
         })
+        const allCat=article.filter((v)=>{
+            return v.id%10===1
+        })
+        setTopPosts(allCat);
         setData(filtered);
         window.scrollTo(0,0);
-    }, [category,article])
-    
+
+    }, [category,article])    
   return (
     <div className="blog__page__container">
         <div className="category__posts">
@@ -37,7 +42,7 @@ const Blogpage = ({category}) => {
             <div>
                 <h1>Top Posts</h1>
                 {
-                    data.map(v=>{
+                    topPosts.map(v=>{
                         return(
                             <Blogitem isSmall
                 imageUrl={v.Image} 

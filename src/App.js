@@ -17,7 +17,7 @@ function App() {
             <Route path='/category/health' element={<Blogpage key='health' category="Health"/>}/>
             <Route path='/category/bollywood' element={<Blogpage key='bollywood' category="Bollywood"/>}/>
             <Route path='/category/sports' element={<Blogpage key='sports' category="Sports"/>}/>
-            <Route path='/category/:id' element={<Detailedblog/>} />
+            <Route path='/category/:category/:id' element={<Detailedblog/>} />
           </Routes>
         </BrowserRouter>
       </ArticleContextProvider>

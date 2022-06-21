@@ -11,6 +11,7 @@ const Detailedblog = () => {
             v.id===id
         )
     })
+    console.log(filteredBlog)
     const categoryFilter=article.filter(v=>{
         return (
             v.category===filteredBlog[0].category
