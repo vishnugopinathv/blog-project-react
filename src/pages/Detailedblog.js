@@ -6,7 +6,7 @@ const Detailedblog = () => {
     const {article}=useArticleContextConsumer();
     const params=useParams()
     const {id}=params;
-    const filteredBlog=article.filter(v=>{
+    const filteredBlog=article.find(v=>{
         return(
             v.id===id
         )
@@ -14,10 +14,9 @@ const Detailedblog = () => {
     console.log(filteredBlog)
     const categoryFilter=article.filter(v=>{
         return (
-            v.category===filteredBlog[0].category
+            v.category===filteredBlog.category
         )
     })
-    console.log(categoryFilter);
     const moreContent=[categoryFilter[parseInt(Math.random()*10)],categoryFilter[parseInt(Math.random()*10)],categoryFilter[parseInt(Math.random()*10)]]
     console.log(moreContent)
     useEffect(() => {
@@ -27,12 +26,12 @@ const Detailedblog = () => {
     return (
     <div className='detailed__blog__container'>
         <div className="headline">
-            <h1>{filteredBlog[0].title}</h1>
-            <img src={filteredBlog[0].Image} alt="" />
-            <p>{filteredBlog[0].description}</p>
+            <h1>{filteredBlog.title}</h1>
+            <img src={filteredBlog.Image} alt="" />
+            <p>{filteredBlog.description}</p>
         </div>
         <div className="more__blog__container">
-            <h2>More from {filteredBlog[0].category}</h2>
+            <h2>More from {filteredBlog.category}</h2>
             <div className="underline" style={{transform:'scaleX(1)',marginLeft:"2rem",width:'14rem'}}></div>
             <div className="more__blog">
                 {

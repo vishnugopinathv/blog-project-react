@@ -4,7 +4,7 @@ import { useArticleContextConsumer } from '../Context/articleContext'
 import { Link } from 'react-router-dom';
 const Home = () => {
   const{article}=useArticleContextConsumer();
-  const randomItem= [article[2],article[14],article[24]]
+  const randomItem= [article[2],article[14],article[24],article[31],article[41]]
   console.log(randomItem)
   return (
     <div className="home__container">
